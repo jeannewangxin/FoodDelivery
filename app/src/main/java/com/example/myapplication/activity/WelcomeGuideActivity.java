@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.myapplication.activity;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import com.example.myapplication.R;
+import com.example.myapplication.activity.MainActivity;
 import com.lidroid.xutils.ViewUtils;
 import com.lidroid.xutils.view.annotation.ViewInject;
 import com.lidroid.xutils.view.annotation.event.OnClick;
@@ -35,7 +37,7 @@ public class WelcomeGuideActivity extends Activity {
     }
     @OnClick (R.id.welcome_guide_btn)
     public void click(View view){
-        startActivity (new Intent (getApplicationContext (),MainActivity.class));
+        startActivity (new Intent (getApplicationContext (), MainActivity.class));
         finish ();
     }
 

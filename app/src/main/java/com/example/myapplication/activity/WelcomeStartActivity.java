@@ -1,12 +1,10 @@
-package com.example.myapplication;
+package com.example.myapplication.activity;
 
 import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 
+import com.example.myapplication.R;
 import com.example.myapplication.util.SharedUtils;
 
 import java.util.Timer;
@@ -46,7 +44,7 @@ public class WelcomeStartActivity extends Activity {
         @Override
         public void run() {
             if(SharedUtils.getWelcomeBoolean (getBaseContext ())){
-                startActivity (new Intent (getBaseContext (),MainActivity.class));
+                startActivity (new Intent (getBaseContext (), MainActivity.class));
             }else {
                 startActivity (new Intent (WelcomeStartActivity.this, WelcomeGuideActivity.class));
                 SharedUtils.putWelcomeBoolean (getBaseContext (),true);
