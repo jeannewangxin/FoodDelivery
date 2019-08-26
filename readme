@@ -11,3 +11,33 @@ For doing some practice of Programming.
 9.history
 10.Again
 11.Change personnal informations(pwd,nikname)
+
+
+MVP:model/View/Presenter
+Model:负责获取数据操作
+View:负责UI操作，定义方法给presenter调用
+Presenter:控制Model的数据操作和View的UI操作——“中间人”
+View中实例化Presenter,通过Presenter来处理业务逻辑
+
+
+1.欢迎页面
+2.导航页面
+3.首页：底部导航条
+4.个人页面
+5.登录页面（密码，验证码验证）
+6.首页内容绘制
+7.城市地址选择（地图api）
+
+
+
+客户端：
+   1.首页
+	欢迎页面的延时跳转 handler/Timer
+	欢迎页面跳转的实现
+	导航页页面滑动的实现
+   2.团购
+   3.发现
+   4.我的
+服务器端
+
+
